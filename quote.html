@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>A quote a day</title>
+</head>
+<body>
+<div align="center" style="padding: 60px;float: left;">
+  <h1 style="color:red;" id="quote"></h1>
+</div>
+
+<script>
+var qArray=[
+  "A great deal of intelligence can be invested in ignorance when the need for illusion is deep.",
+  "The quality of your thinking determines the quality of your life.",
+  "Take the first step in faith. You don't have to see the whole staircase, just take the first step.",
+  "It's better to be a lion for a day than a sheep all your life.",
+  "Every day is a NEW beginning, take a deep breath and START AGAIN.",
+  "If you have never made a mistake then it means you have never tried something new."
+               ];
+
+         var randomNo=Math.floor((Math.random() * 6) + 1);
+	 alert(randomNo);
+         document.getElementById('quote').innerHTML=qArray[randomNo-1];
+
+</script>
+
+</body>
+</html>
